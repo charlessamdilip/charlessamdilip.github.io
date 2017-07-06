@@ -16,6 +16,7 @@
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.0.0"
   }
 }

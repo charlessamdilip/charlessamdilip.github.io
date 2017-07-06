@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, '../assets/js/');
 var APP_DIR = path.resolve(__dirname, '');
@@ -18,7 +19,13 @@ var config = {
         loader : 'babel-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new UglifyJSPlugin({
+      compress: true,
+      comments: false
+    })
+  ]
 };
 
 module.exports = config;

@@ -4,7 +4,7 @@ import jQuery from 'jquery';
 
 class App extends React.Component {
   render () {
-    return <p> Hello React!</p>;
+    return <p> Hello React!!!</p>;
   }
 }
 
